@@ -41,7 +41,7 @@ class Checkbox extends PureComponent {
   }
 
   componentDidUpdate (prevProps, prevState) {
-    this.setState({ checked: this.props.checked })
+    this.setState({ checked: !this.props.checked })
   }
 
   render () {
